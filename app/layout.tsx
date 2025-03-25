@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import {Inter} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Home/Navbar/Navbar";
+import SmoothScrollProvider from "@/components/SmoothScrollProvider";
 
 const font = Inter({
     weight: ["100", "200", "300", "400", "500", "700", "900"],
@@ -23,8 +24,11 @@ export default function RootLayout({
       <body
           className={`${font.className} antialiased`}
       >
-        <Navbar />
-        {children}
+      <SmoothScrollProvider>
+          <Navbar />
+          {children}
+      </SmoothScrollProvider>
+
       </body>
     </html>
   );
