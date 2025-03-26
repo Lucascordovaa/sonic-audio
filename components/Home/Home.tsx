@@ -3,7 +3,9 @@
 import React, {useEffect} from 'react';
 import Hero from "@/components/Home/Hero/Hero";
 import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
+import Innovation from "@/components/Home/Innovation/Innovation";
+import FirstFeatures from "@/components/Home/Features/FirstFeatures"; // You can also use <link> for styles
 
 const Home = () => {
     useEffect(() => {
@@ -18,9 +20,12 @@ const Home = () => {
         }
         initAOS();
     }, []);
+
     return (
-        <div className="overflow-hidden h-[2000px]">
+        <div className="overflow-hidden h-[5000px]">
             <Hero/>
+            <Innovation/>
+            <FirstFeatures/>
         </div>
     );
 };

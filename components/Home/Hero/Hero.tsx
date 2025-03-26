@@ -10,11 +10,12 @@ const Hero = () => {
     const { scrollYProgress } = useScroll(); // Track scroll progress
 
     // Define animation effects
-    const scale = useTransform(scrollYProgress, [0, 1], [1, 1.3]); // Scale image from 1 to 1.3
+    const scale = useTransform(scrollYProgress, [0, 1], [1, 1.6]); // Scale image from 1 to 1.3
+    const y = useTransform(scrollYProgress, [0, 1], [0, -200]); // Move image upward
 
 
     return (
-        <div className="w-full pt-[4vh] md:pt-[12vh] h-screen">
+        <div className="w-full pt-[4vh] md:pt-[12vh] h-auto">
             <div className="flex xl:w-[63%] mx-auto justify-center h-full">
                 <div className="flex flex-col lg:w-[68%] text-center mt-[11vh] lg:mt-[8vh]">
                     <h1 data-aos="fade-up" className="font-semibold text-[36px] lg:text-[60px] leading-[1.2]">Immersive Sound, Simplified</h1>
@@ -33,7 +34,7 @@ const Hero = () => {
                     </div>
                     <div data-aos="zoom-out-up" className="flex justify-center mt-8">
                         {/* Wrapped Image inside motion.div for animation */}
-                        <motion.div style={{ scale}}>
+                        <motion.div style={{ scale, y}}>
                             <Image src="/images/sonicbox.png" alt="sonicbox" width={700} height={700} />
                         </motion.div>
                     </div>
