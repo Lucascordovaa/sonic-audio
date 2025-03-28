@@ -25,7 +25,7 @@ export default function RootLayout({
           className={`${font.className} antialiased`}
       >
       <SmoothScrollProvider>
-          <Navbar />
+          <Navbar/>
           {children}
       </SmoothScrollProvider>
 

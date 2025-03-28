@@ -18,9 +18,9 @@ const FirstFeatures = () => {
 
     return (
         <div className="w-full h-[920px]">
-            <div className="flex xl:w-[63%] mx-auto h-full items-center justify-between">
+            <div className="flex flex-col-reverse lg:flex-row w-[63%] mx-auto h-full items-center justify-between gap-[32px]">
                 {/*left site*/}
-                <div className="flex flex-col justify-center gap-[42px] w-[570px] h-[600px]">
+                <div className="flex flex-col justify-center gap-[42px] w-[358px] h-[776px] lg:w-[570px] lg:h-[600px]">
                     <div className="flex items-center space-x-2">
                         <PiWaveform className="text-[22px]"/>
                         <p className="text-[19px] leading-[1.6]">The Perfect Sound, Anywhere</p>
@@ -47,7 +47,7 @@ const FirstFeatures = () => {
                 {/* Right Side (Animated Background Image) */}
                 <motion.div
                     ref={ref}
-                    className="flex flex-col justify-center gap-[42px] w-[569px] h-[600px] rounded-3xl bg-[url('/images/sound1.png')] bg-center"
+                    className="flex flex-col justify-center lg:gap-[42px] w-[358px] h-[776px] lg:w-[569px] lg:h-[600px] rounded-3xl bg-[url('/images/sound1.png')] bg-center mt-[32px] lg:mt-0"
                     style={{ backgroundPosition }}
                 />
             </div>
