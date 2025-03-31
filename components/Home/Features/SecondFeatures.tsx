@@ -17,7 +17,7 @@ const SecondFeatures = () => {
     const backgroundPosition = useTransform(scrollYProgress, [1, 0], ["50% 40%", "50% 0%"]);
 
     return (
-        <div className="w-full h-[920px] mt-[32px]">
+        <div className="w-full h-[920px] lg:h-[728px] mt-[32px]">
             <div className="flex flex-col h-full lg:flex-row w-[63%] mx-auto items-center lg:items-start justify-between gap-[32px]">
                 {/* Right Side (Animated Background Image) */}
                 <motion.div

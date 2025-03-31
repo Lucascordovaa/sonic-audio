@@ -6,7 +6,8 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Innovation from "@/components/Home/Innovation/Innovation";
 import FirstFeatures from "@/components/Home/Features/FirstFeatures";
-import SecondFeatures from "@/components/Home/Features/SecondFeatures"; // You can also use <link> for styles
+import SecondFeatures from "@/components/Home/Features/SecondFeatures";
+import WhyUs from "@/components/Home/WhyUs/WhyUs"; // You can also use <link> for styles
 
 const Home = () => {
     useEffect(() => {
@@ -28,6 +29,7 @@ const Home = () => {
             <Innovation/>
             <FirstFeatures/>
             <SecondFeatures/>
+            <WhyUs/>
         </div>
     );
 };
