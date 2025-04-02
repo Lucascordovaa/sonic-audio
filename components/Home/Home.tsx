@@ -7,7 +7,8 @@ import 'aos/dist/aos.css';
 import Innovation from "@/components/Home/Innovation/Innovation";
 import FirstFeatures from "@/components/Home/Features/FirstFeatures";
 import SecondFeatures from "@/components/Home/Features/SecondFeatures";
-import WhyUs from "@/components/Home/WhyUs/WhyUs"; // You can also use <link> for styles
+import WhyUs from "@/components/Home/WhyUs/WhyUs";
+import ImageHeader from "@/components/Home/ImageGallery/ImageHeader"; // You can also use <link> for styles
 
 const Home = () => {
     useEffect(() => {
@@ -24,12 +25,13 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="overflow-hidden h-[5000px]">
+        <div className="overflow-hidden h-[10000px]">
             <Hero/>
             <Innovation/>
             <FirstFeatures/>
             <SecondFeatures/>
             <WhyUs/>
+            <ImageHeader/>
         </div>
     );
 };

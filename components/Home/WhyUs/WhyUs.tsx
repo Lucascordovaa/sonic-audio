@@ -15,9 +15,9 @@ const WhyUs = () => {
                     <p className="text-[16px] leading-[1.5] ml-1">Why us?</p>
                 </div>
 
-                <div className="flex flex-col lg:flex-row mt-[12px]">
+                <div className="flex flex-col lg:flex-row mt-[12px] gap-[24px]">
                     <div className="w-full">
-                        <h3 className="text-[42px] leading-[1.2]">Trusted by Thousands, Engineered for Excellence</h3>
+                        <h3 className="text-[33px] lg:text-[42px] leading-[1.2]">Trusted by Thousands, Engineered for Excellence</h3>
                     </div>
                     <div>
                         <p className="text-[19px] leading-[1.6] lg:text-right">Our commitment to innovation and quality has earned the
