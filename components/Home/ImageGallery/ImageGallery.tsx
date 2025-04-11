@@ -15,7 +15,6 @@ export default function ImageGallery() {
 
     return (
         <div className="flex flex-col lg:flex-row gap-4 mt-[42px] rounded-lg">
-            {/* Thumbnails on the left */}
             <div className="flex lg:flex-col gap-3 justify-center">
                 {images.map((img, idx) => (
                     <button
@@ -30,9 +29,8 @@ export default function ImageGallery() {
                 ))}
             </div>
 
-            {/* Main Image on the right */}
             <motion.div
-                key={selectedImage} // Forces Framer Motion to animate on change
+                key={selectedImage}
                 initial={{ opacity: 0}}
                 animate={{ opacity: 1}}
                 transition={{ duration: 0.6 }}
