@@ -1,5 +1,5 @@
 import React from 'react'
-import FaqAccordion from "@/components/FAQ/FaqAccordion";
+import FaqAccordion from "@/components/Home/FAQ/FaqAccordion";
 
 const Faq = () => {
     return (

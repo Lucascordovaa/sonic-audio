@@ -9,7 +9,7 @@ import FirstFeatures from "@/components/Home/Features/FirstFeatures";
 import SecondFeatures from "@/components/Home/Features/SecondFeatures";
 import WhyUs from "@/components/Home/WhyUs/WhyUs";
 import ImageHeader from "@/components/Home/ImageGallery/ImageHeader";
-import FAQ from "@/components/FAQ/FAQ"; // You can also use <link> for styles
+import FAQ from "@/components/Home/FAQ/FAQ"; // You can also use <link> for styles
 
 const Home = () => {
     useEffect(() => {
@@ -26,7 +26,7 @@ const Home = () => {
     }, []);
 
     return (
-        <div className="overflow-hidden h-[10000px]">
+        <div className="overflow-hidden">
             <Hero/>
             <Innovation/>
             <FirstFeatures/>

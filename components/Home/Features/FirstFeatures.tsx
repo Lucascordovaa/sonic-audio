@@ -37,7 +37,7 @@ const FirstFeatures = () => {
                         </p>
                         <Button className="flex justify-center cursor-pointer px-5 py-7 text-[16px]
                         text-white border border-black rounded-full transition-all
-                        duration-400 bg-black hover:border-gray-400 hover:bg-gray-800">
+                        duration-400 bg-[#262628] hover:border-gray-400 hover:bg-gray-800">
                             <p className="mr-2">Buy now</p>
                             <p>&gt;</p>
                         </Button>
