@@ -4,7 +4,7 @@ import ImageGallery from "@/components/Home/ImageGallery/ImageGallery";
 
 const ImageHeader = () => {
     return (
-        <div className="w-full h-auto mt-[64px]">
+        <div id="products" className="w-full h-auto mt-[64px]">
             <div className="flex flex-col mx-auto w-[358px] lg:w-[63%]">
                 <div
                     className="flex items-center justify-center text-[#575757] rounded-full w-[114px] h-[36px] bg-transparent border border-[#C3C4C5]">

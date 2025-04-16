@@ -17,7 +17,7 @@ const FirstFeatures = () => {
     const backgroundPosition = useTransform(scrollYProgress, [1, 0], ["50% 40%", "50% 0%"]);
 
     return (
-        <div className="w-full h-[920px]">
+        <div id="features" className="w-full h-[920px]">
             <div className="flex flex-col-reverse lg:flex-row w-[63%] mx-auto h-full items-center justify-between gap-[32px]">
                 {/*left site*/}
                 <div className="flex flex-col justify-center gap-[42px] w-[358px] h-[776px] lg:w-[570px] lg:h-[600px]">
