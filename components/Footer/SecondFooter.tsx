@@ -7,13 +7,15 @@ const SecondFooter = () => {
     return (
         <div className="w-full bg-[#1B1C21]">
             <div className="w-[358px] lg:w-[63%] mx-auto py-[62px]">
-                <div className="flex">
+                <div className="flex flex-col lg:flex-row gap-10 lg:gap-0">
+
                     <div className="flex flex-row items-center">
                         <h1 className="font-bold text-[2rem] text-white">SONIC</h1>
                         <div className="h-7 border-l border-gray-400 mx-4"></div>
                         <p className="text-[16px] leading-[1.5] text-white">The Perfect Sound, Anywhere</p>
                     </div>
-                    <div className="flex mx-auto space-x-[230px] ml-[250px]">
+
+                    <div className="flex lg:mx-auto space-x-[58px] lg:space-x-[230px] lg:ml-[250px]">
                         <div className="flex flex-col">
                             <h1 className="text-[20px] leading-[1.6] text-white pb-[12px]">Company</h1>
                             <Link href="/" className="text-[16px] leading-[1.5] text-white pb-[8px]">Blog</Link>
@@ -28,15 +30,15 @@ const SecondFooter = () => {
                     </div>
                 </div>
 
-                <div className="flex justify-center w-full">
-                    <h1 className="text-[380px] font-semibold text-[#313438] -my-14">SONIC</h1>
+                <div className="flex justify-center w-full h-[180px] lg:h-full items-center">
+                    <h1 className="text-[100px] lg:text-[380px] font-semibold text-[#313438] -my-14">SONIC</h1>
                 </div>
 
-                <div className="flex justify-between">
+                <div className="flex flex-col lg:flex-row justify-between space-y-5 lg:space-y-0">
                     <div>
                         <p className="text-white text-[16px] leading-[1.5]">© 2025. All rights reserved. SONIC Audio inc.</p>
                     </div>
-                    <div className="flex items-center space-x-2">
+                    <div className="flex items-center space-x-2 justify-end">
                         <p className="text-white text-[16px] leading-[1.5]">@sonic</p>
                         <FaXTwitter className="size-7 text-white"/>
                         <FaInstagram className="size-7 text-white"/>
