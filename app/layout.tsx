@@ -3,7 +3,7 @@ import {Inter} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar/Navbar";
 import Footer from "@/components/Footer/Footer";
-import {LenisProvider} from "@/components/LenisProvider";
+import LenisProvider from "@/components/LenisProvider";
 
 const font = Inter({
     weight: ["100", "200", "300", "400", "500", "700", "900"],
@@ -21,7 +21,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" >
+    <html lang="en">
       <body
           className={`${font.className} antialiased`}
       >
@@ -30,7 +30,6 @@ export default function RootLayout({
           {children}
           <Footer/>
       </LenisProvider>
-
       </body>
     </html>
   );

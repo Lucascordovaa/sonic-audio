@@ -5,9 +5,11 @@ import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import {navLinks} from "@/constant/Constant";
 import Link from "next/link";
+import { useLenis } from "@/components/LenisProvider";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
+    const lenis = useLenis();
 
     return (
         <div className="fixed z-[1000] h-[88px] w-full transition-all duration-200 bg-white">
@@ -19,9 +21,19 @@ const Navbar = () => {
                 <div className="hidden items-center space-x-10 lg:flex">
                     {navLinks.map((link) => {
                         return (
-                            <Link href={link.url} key={link.id}>
-                                <p className='text-[#575757] hover-link'>{link.label}</p>
-                            </Link>)
+                            <a
+                                key={link.id}
+                                href={link.url}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    const target = document.getElementById(link.id);
+                                    if (target && lenis) lenis.scrollTo(target, {offset: -88,});
+                                }}
+                                className="text-[#575757] hover-link"
+                            >
+                                {link.label}
+                            </a>
+                        )
                     })}
                 </div>
 
@@ -52,9 +64,19 @@ const Navbar = () => {
                 <div className="flex flex-col items-center space-y-4 py-4">
                     {navLinks.map((link) => {
                         return (
-                            <Link href={link.url} key={link.id}>
-                                <p className='text-[#575757] hover-link'>{link.label}</p>
-                            </Link>)
+                            <a
+                                key={link.id}
+                                href={link.url}
+                                onClick={(e) => {
+                                    e.preventDefault();
+                                    const target = document.getElementById(link.id);
+                                    if (target && lenis) lenis.scrollTo(target);
+                                    setMenuOpen(false);
+                                }}
+                                className="text-[#575757] hover-link"
+                            >
+                                {link.label}
+                            </a>)
                     })}
 
                     {/* Buy Now Button at the Bottom */}
