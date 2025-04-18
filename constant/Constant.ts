@@ -2,22 +2,26 @@ export const navLinks = [
     {
         id:'about',
         url: '#about',
-        label: "About"
+        label: "About",
+        type: "scroll"
     },
     {
         id:'features',
         url: '#features',
-        label: "Features"
+        label: "Features",
+        type: "scroll"
     },
     {
         id:'products',
         url: '#products',
-        label: "Products"
+        label: "Products",
+        type: "scroll"
     },
     {
         id:'contact',
-        url: '#contact',
-        label: "Contact"
+        url: '/contact',
+        label: "Contact",
+        type: "link"
     }
 ]
 

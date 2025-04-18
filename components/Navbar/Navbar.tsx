@@ -5,17 +5,19 @@ import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import {navLinks} from "@/constant/Constant";
 import Link from "next/link";
-import { useLenis } from "@/components/LenisProvider";
+import { useHandleNavClick } from "@/hooks/useHandleNavClick";
 
 const Navbar = () => {
     const [menuOpen, setMenuOpen] = useState(false);
-    const lenis = useLenis();
+    const handleClick = useHandleNavClick(() => setMenuOpen(false));
 
     return (
         <div className="fixed z-[1000] h-[88px] w-full transition-all duration-200 bg-white">
             <div className="mx-auto flex h-full w-[90%] items-center justify-between xl:w-[63%]">
                 {/* Logo */}
-                <h1 className="font-bold text-[2rem]">SONIC</h1>
+                <Link href="/">
+                    <h1 className="font-bold text-[2rem]">SONIC</h1>
+                </Link>
 
                 {/* Desktop navigation links */}
                 <div className="hidden items-center space-x-10 lg:flex">
@@ -24,11 +26,7 @@ const Navbar = () => {
                             <a
                                 key={link.id}
                                 href={link.url}
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    const target = document.getElementById(link.id);
-                                    if (target && lenis) lenis.scrollTo(target, {offset: -88,});
-                                }}
+                                onClick={(e) => handleClick(e, link)}
                                 className="text-[#575757] hover-link"
                             >
                                 {link.label}
@@ -67,12 +65,7 @@ const Navbar = () => {
                             <a
                                 key={link.id}
                                 href={link.url}
-                                onClick={(e) => {
-                                    e.preventDefault();
-                                    const target = document.getElementById(link.id);
-                                    if (target && lenis) lenis.scrollTo(target);
-                                    setMenuOpen(false);
-                                }}
+                                onClick={(e) => handleClick(e, link)}
                                 className="text-[#575757] hover-link"
                             >
                                 {link.label}
