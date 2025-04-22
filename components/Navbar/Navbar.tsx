@@ -38,13 +38,18 @@ const Navbar = () => {
                 {/* Buttons and Mobile Menu */}
                 <div className="flex items-center space-x-6">
                     {/* Buy Now button (hidden on mobile) */}
+                    <Link href="https://github.com/Lucascordovaa/sonic-audio"
+                          rel="noopener noreferrer"
+                          target="_blank">
                     <Button
                         className="hidden lg:flex items-center cursor-pointer px-5 py-7 text-[16px]
                         text-[#575757] border border-gray-300 rounded-full transition-all
                         duration-400 bg-transparent hover:border-black hover:bg-white">
-                        <p className="mr-2">Buy now</p>
-                        <p>&gt;</p>
+
+                            <p className="mr-2">Buy now</p>
+                            <p>&gt;</p>
                     </Button>
+                    </Link>
 
                     {/* Mobile Menu Button */}
                     <button

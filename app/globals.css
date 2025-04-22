@@ -141,4 +141,38 @@
         text-[#575757] border border-gray-300 rounded-full transition-all
         duration-400 bg-transparent hover:border-black hover:bg-white
     }
+
+  .counter-section {
+    counter-reset: section;
+  }
+
+  section.countered-section {
+    counter-increment: section;
+    counter-reset: subsection;
+  }
+
+  .section-heading::before {
+    content: counter(section) ".";
+    left: 0;
+    font-weight: bold;
+    font-size: 28px;
+    color: #000;
+  }
+
+  .section-heading {
+    padding-left: 0;
+  }
+
+  .counter-subitem {
+    counter-increment: subsection;
+    padding-left: 2.5rem;
+  }
+
+  .counter-subitem::before {
+    content: counter(section) "." counter(subsection) ".";
+    left: 0;
+    font-weight: bold;
+    color: #575757;
+  }
+
 }

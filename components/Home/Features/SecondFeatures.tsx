@@ -3,6 +3,7 @@ import React, {useRef} from 'react'
 import { motion, useScroll, useTransform } from "framer-motion";
 import { PiDeviceMobileSpeaker } from "react-icons/pi";
 import {Button} from "@/components/ui/button";
+import Link from "next/link";
 
 const SecondFeatures = () => {
     const ref2 = useRef(null);
@@ -41,12 +42,16 @@ const SecondFeatures = () => {
                         <p className="text-[19px] leading-[1.6]">
                             Designed for modern living, this speaker blends premium sound with intuitive controls.
                         </p>
+                        <Link href="https://github.com/Lucascordovaa/sonic-audio"
+                              rel="noopener noreferrer"
+                              target="_blank">
                         <Button className="flex justify-center cursor-pointer px-5 py-7 text-[16px]
                         text-white border border-black rounded-full transition-all
                         duration-400 bg-[#262628] hover:border-gray-400 hover:bg-gray-800">
                             <p className="mr-2">Buy now</p>
                             <p>&gt;</p>
                         </Button>
+                        </Link>
                     </div>
                 </div>
 

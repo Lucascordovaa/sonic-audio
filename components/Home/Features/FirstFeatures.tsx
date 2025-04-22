@@ -3,6 +3,7 @@ import React, {useRef} from 'react'
 import { motion, useScroll, useTransform } from "framer-motion";
 import { PiWaveform } from "react-icons/pi";
 import {Button} from "@/components/ui/button";
+import Link from "next/link";
 
 const FirstFeatures = () => {
     const ref = useRef(null);
@@ -35,12 +36,16 @@ const FirstFeatures = () => {
                             Our smart speaker is designed to fill your space with rich, high-fidelity sound—whether
                             you&#39;re at home or on the go.
                         </p>
+                        <Link href="https://github.com/Lucascordovaa/sonic-audio"
+                              rel="noopener noreferrer"
+                              target="_blank">
                         <Button className="flex justify-center cursor-pointer px-5 py-7 text-[16px]
                         text-white border border-black rounded-full transition-all
                         duration-400 bg-[#262628] hover:border-gray-400 hover:bg-gray-800">
                             <p className="mr-2">Buy now</p>
                             <p>&gt;</p>
                         </Button>
+                        </Link>
                     </div>
                 </div>
 

@@ -4,6 +4,7 @@ import React from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion'; // Added Framer Motion imports
 import {Button} from "@/components/ui/button";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
 
@@ -25,12 +26,16 @@ const Hero = () => {
                     </p>
                     <div data-aos="fade-up" data-aos-duration="1800"  className="flex justify-center pt-7">
                         {/* Buy Now button (hidden on mobile) */}
+                        <Link href="https://github.com/Lucascordovaa/sonic-audio"
+                              rel="noopener noreferrer"
+                              target="_blank">
                         <Button className="flex items-center cursor-pointer px-5 py-7 text-[16px]
                         text-white border border-black rounded-full transition-all
                         duration-400 bg-[#262628] hover:border-gray-400 hover:bg-gray-800">
                             <p className="mr-2">Buy now</p>
                             <p>&gt;</p>
                         </Button>
+                        </Link>
                     </div>
                     <div data-aos="zoom-out-up" className="flex justify-center mt-8">
                         {/* Wrapped Image inside motion.div for animation */}
