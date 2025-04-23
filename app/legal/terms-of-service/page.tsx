@@ -1,12 +1,12 @@
 import React from 'react'
 import {PiCalendarBlank} from "react-icons/pi";
-import {Sections} from "@/components/TosSections/Sections";
+import {TosSections} from "@/components/TosSections/TosSections";
 
 const Page = () => {
     return (
         <div className="w-full pt-[4vh] md:pt-[12vh] h-auto">
             <div className="xl:w-[63%] mx-auto">
-                <div className="xl:w-[67%] mx-auto justify-center space-y-[32px]">
+                <div className="w-[90%] lg:w-[67%] mx-auto justify-center space-y-[32px]">
                     <div
                         className="flex mx-auto items-center justify-center text-[#575757] rounded-full w-[114px] h-[36px] bg-transparent border border-[#C3C4C5]">
                         <PiCalendarBlank className="size-[20px]"/>
@@ -27,7 +27,7 @@ const Page = () => {
                         If you do not agree to these terms, please refrain from using our platform.
                     </p>
 
-                    <Sections/>
+                    <TosSections/>
 
                 </div>
             </div>

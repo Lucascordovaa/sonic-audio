@@ -127,3 +127,88 @@ export const tosSections = [
         ],
     },
 ];
+
+export const privacyPolicySections = [
+    {
+        title: "Information We Collect",
+        subtitle: "We may collect the following types of information:",
+        points: [
+            "Personal information: Name, email address, phone number, and other contact details provided during " +
+            "account creation or communication, as well as Payment information for subscription or service purchases.",
+            "Usage Data: IP address, browser type, operating system, and device information, as well as details about" +
+            "how you interact with our website (e.g., pages visited, features used, session duration).",
+            "Data you provide: Any content, queries, or files you upload to interact with our AI tools, " +
+            "as well as feedback or survey responses submitted through our platform."
+        ],
+    },
+    {
+        title: "How We Use Your Information",
+        subtitle: "We use your information for the following purposes:",
+        points: [
+            "To provide, personalize, and improve our services.",
+            "To process payments and manage your account.",
+            "To communicate with you about updates, promotions, or support inquiries.",
+            "To analyze usage patterns and improve our AI algorithms.",
+            "To ensure security, detect fraud, and comply with legal obligations.",
+        ],
+    },
+    {
+        title: "How We Share Your Information",
+        subtitle: "We value your privacy and only share your information under the following circumstances:",
+        points: [
+            "With trusted third-party service providers (e.g., payment processors, cloud storage) for operational purposes.",
+            "To comply with legal requirements or respond to lawful requests from public authorities.",
+            "In the event of a business transfer, such as a merger, acquisition, or sale of assets.",
+        ],
+        extra: "We do not sell your personal information to third parties.",
+    },
+    {
+        title: "Data Security",
+        subtitle: "We implement industry-standard measures to protect your data, including encryption, secure servers, " +
+            "and access controls. However, no system is completely secure, and we cannot guarantee the absolute security of your information.",
+        points: [
+        ],
+    },
+    {
+        title: "Cookies and Tracking Technologies",
+        subtitle: "Our website uses cookies and similar technologies to:",
+        points: [
+            "Enhance your browsing experience.",
+            "Analyze traffic and usage patterns.",
+            "Deliver personalized content and advertisements.",
+        ],
+        extra: "You can manage or disable cookies through your browser settings.",
+    },
+    {
+        title: "Your Rights",
+        subtitle: "Depending on your location, you may have the following rights regarding your data:",
+        points: [
+            "Access and Portability: Request a copy of your personal information.",
+            "Correction: Update or correct inaccurate information.",
+            "Deletion: Request the deletion of your data, subject to legal obligations.",
+            "Opt-Out: Unsubscribe from marketing communications or data collection for certain purposes.",
+        ],
+        extra: "To exercise these rights, contact us at example@example.com.",
+    },
+    {
+        title: "Third-Party Links",
+        subtitle: "Our website may contain links to third-party websites or services. We are not responsible " +
+            "for their privacy practices, and we encourage you to review their policies before sharing your information.",
+        points: [
+        ],
+    },
+    {
+        title: "Children’s Privacy",
+        subtitle: "Our services are not intended for individuals under 13 years of age, and we do not knowingly collect personal " +
+            "information from children.",
+        points: [
+        ],
+    },
+    {
+        title: "Changes to This Privacy Policy",
+        subtitle: "We may update this Privacy Policy periodically. Any changes will be posted on this page with a new effective date. " +
+            "Continued use of our services after changes are made indicates your acceptance of the updated policy.",
+        points: [
+        ],
+    },
+];
