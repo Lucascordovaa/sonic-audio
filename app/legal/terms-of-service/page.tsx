@@ -8,7 +8,7 @@ const Page = () => {
             <div className="xl:w-[63%] mx-auto">
                 <div className="w-[90%] lg:w-[67%] mx-auto justify-center space-y-[32px]">
                     <div
-                        className="flex mx-auto items-center justify-center text-[#575757] rounded-full w-[114px] h-[36px] bg-transparent border border-[#C3C4C5]">
+                        className="flex mx-auto items-center justify-center text-[#575757] rounded-full w-[114px] h-[36px] bg-transparent border border-[#C3C4C5] mt-14">
                         <PiCalendarBlank className="size-[20px]"/>
                         <p className="text-[16px] leading-[1.5] ml-1">1 Jan 2025</p>
                     </div>

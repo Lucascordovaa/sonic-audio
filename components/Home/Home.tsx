@@ -7,6 +7,7 @@ import SecondFeatures from "@/components/Home/Features/SecondFeatures";
 import WhyUs from "@/components/Home/WhyUs/WhyUs";
 import ImageHeader from "@/components/Home/ImageGallery/ImageHeader";
 import FAQ from "@/components/Home/FAQ/FAQ";
+import Helper from "@/components/Helper/Helper";
 
 const Home = () => {
     return (
@@ -17,6 +18,7 @@ const Home = () => {
                 <FirstFeatures />
                 <SecondFeatures />
                 <WhyUs />
+                <Helper/>
                 <ImageHeader />
                 <FAQ />
             </div>
